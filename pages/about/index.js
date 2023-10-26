@@ -108,7 +108,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+  <div className="min-h-full flex items-center pt-60 bg-primary/30 py-32 text-center xl:text-left">
     <Circles />
     <motion.div 
     variants={fadeIn('right', 0.5)}
