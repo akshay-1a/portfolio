@@ -27,18 +27,22 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html5" />,
+          <FaCss3 key="css3" />,
+          <FaJs key="js" />,
+          <FaReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiFramer key="framer" />,
+          <FaWordpress key="wordpress" />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+          <FaFigma key="figma" />,
+          <SiAdobexd key="adobexd" />,
+          <SiAdobephotoshop key="photoshop" />,
+        ],
       },
     ],
   },
@@ -133,7 +137,7 @@ const About = () => {
         exit="hidden"
         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
         >
-          10 years ago, I began freelancing as a developer. Since then, I've done 
+          10 years ago, I began freelancing as a developer. Since then, I&lsquo;ve done 
           remote work for agencies, consulted for startups, and collaborated on 
           digital products for business and consumer use.
         </motion.p>
