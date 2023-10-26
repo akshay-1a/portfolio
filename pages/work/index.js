@@ -33,8 +33,7 @@ const Work = () => {
           className='mb-4 max-w-[400px] mx-auto lg:mx-0'
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci 
-            ab illum repellendus odit quia dignissimos, impedit, necessitatibus quae 
-            suscipit nesciunt repellat vitae nisi molestias vel?
+            ab illum repellendus odit quia dignissimos vel?
           </motion.p>
         </div>
         {/* slider */}
