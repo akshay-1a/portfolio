@@ -23,8 +23,8 @@ const Home = () => {
           animate='show'
           exit='hidden'
           className="h1">
-            Transforming Ideas<br /> Into{' '}
-            <span className="text-accent">Digital Reality.</span>
+            Turning Your Vision<br /> Into{' '}
+            <span className="text-accent">Digital Success.</span>
           </motion.h1>
           {/* sub-title */}
           <motion.p 
