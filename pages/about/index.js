@@ -161,10 +161,10 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            For over 3 years, I've transformed ideas into reality through
-            freelance web development. From startups to established brands, I've
-            delivered innovative solutions using Next.js, Tailwind CSS, Django,
-            and Go-Lang.
+            For over 3 years, I&apos;ve transformed ideas into reality through
+            freelance web development. From startups to established brands,
+            I&apos;ve delivered innovative solutions using Next.js, Tailwind
+            CSS, Django, and Go-Lang.
           </motion.p>
           {/* counter */}
           <motion.div

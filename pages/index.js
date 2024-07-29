@@ -27,7 +27,9 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            <span className="text-[38px] font-semibold tracking-[18px] text-violet-200/80">Empowering Your</span>
+            <span className="text-[38px] font-semibold tracking-[18px] text-violet-200/80">
+              Empowering Your
+            </span>
             <br />
             <span className="text-[72px] text-accent tracking-normal font-bold">
               Digital Presence.
@@ -41,10 +43,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-violet-100 tracking-wide text-justify font-semibold"
           >
-            I'm Akshay Arora, a passionate web developer specializing in Next.js
-            and Tailwind CSS. With a keen eye for design and a knack for coding,
-            I create web experiences that are both visually stunning and highly
-            functional.
+            I&apos;m Akshay Arora, a passionate web developer specializing in
+            Next.js and Tailwind CSS. With a keen eye for design and a knack for
+            coding, I create web experiences that are both visually stunning and
+            highly functional.
           </motion.p>
           {/* button */}
           <div className="flex justify-center xl:hidden relative">
