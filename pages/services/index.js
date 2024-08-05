@@ -12,7 +12,7 @@ const Services = () => {
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-x-8">
+        <div className="flex flex-col xl:flex-row gap-x-8 items-center h-full">
           {/* text */}
           <div
             className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4
@@ -33,7 +33,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify"
             >
               Delivering innovative, tailored solutions to meet your unique
               needs. From web development and AI to graphic design, each project

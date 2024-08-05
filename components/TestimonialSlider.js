@@ -1,25 +1,25 @@
 // testimonial data
 export const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: "/t-avt-3.png",
+    name: "Jay Jeev",
+    position: "Founder of Indiexplor",
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Working with Akshay was a transformative experience for Indiexplor. His innovative approach to web development and seamless integration of cutting-edge technologies brought our vision to life. Akshay's dedication to quality and his ability to understand our needs made the entire process smooth and rewarding.",
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    image: "/t-avt-1.png",
+    name: "Priya Singh",
+    position: "Marketing Head at Flyxpert Adventures Co Ltd",
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Collaborating with Akshay was a fantastic experience. His ability to incorporate advanced features and ensure a smooth user experience has greatly benefited Flyxpert. Akshay's creative solutions and technical proficiency have helped us stand out in a competitive market!",
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: "/t-avt-2.png",
+    name: "Ms Sola",
+    position: "Web Dev Student, USA",
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Akshay's expertise and teaching style made learning React a breeze. His clear explanations and real-world examples boosted my confidence and skills in web development!",
   },
 ];
 

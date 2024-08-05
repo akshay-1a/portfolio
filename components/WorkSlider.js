@@ -12,6 +12,7 @@ import { Pagination } from 'swiper';
 
 // icons
 import { BsArrowRight } from 'react-icons/bs';
+import Link from 'next/link';
 
 // data
 const workSlides = {
@@ -19,43 +20,51 @@ const workSlides = {
     {
       images: [
         {
-          title: 'title',
-          path: '/thumb1.jpg',
+          title: "Jeevan Cure Health Care Web App",
+          path: "/jeevan-cure.png",
+          link: "https://jeevancure.imperfectors.com/",
         },
         {
-          title: 'title',
-          path: '/thumb2.jpg',
+          title: "Anytube Online Media Streaming Web App",
+          path: "/anytube.png",
+          link: "https://anytube.imperfectors.com/",
         },
         {
-          title: 'title',
-          path: '/thumb3.jpg',
+          title: "Gen-I Image Gen AI Web App",
+          path: "/gen-i.png",
+          link: "https://gen-i.imperfectors.com/",
         },
         {
-          title: 'title',
-          path: '/thumb4.jpg',
+          title: "Covid Resources Web App",
+          path: "/covid-resources.png",
+          link: "https://covid-resources.imperfectors.com/",
         },
       ],
     },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
-      ],
-    },
+    // {
+    //   images: [
+    //     {
+    //       title: "title",
+    //       path: "/thumb4.jpg",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb1.jpg",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb2.jpg",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb3.jpg",
+    //       link: "",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -74,7 +83,7 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image, index)=>{
                 return(
-                  <div className='relative rounded-lg overflow-hidden flex items-center
+                  <Link href={image.link} draggable target='_blank' className='relative rounded-lg overflow-hidden flex items-center
                   justify-center group'
                   key={index}
                   >
@@ -110,7 +119,7 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 )
               })}
             </div>
