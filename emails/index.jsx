@@ -71,6 +71,19 @@ const PropDefaults = {
   ],
 };
 
+const buttons = {
+  display: "flex",
+  gap: "5px",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const bord = {
+  border: "2px solid #0f172a",
+  borderRadius: "8px",
+};
+
+
 export const ContactEmail = ({
   name,
   email,
@@ -99,104 +112,125 @@ export const ContactEmail = ({
           },
         }}
       >
-        <Body className="bg-offwhite text-base font-sans border-slate-900 border-2">
-          <Container className="bg-slate-900 pt-4 pb-0 mb-0">
-            <Section className="flex gap-5 justify-center items-center">
-              <Column className="text-white text-4xl font-extrabold">
-                ImPerfectors.com
-              </Column>
-              <Column>
+        <Body className="bg-offwhite text-base font-sans">
+          <Container style={bord}>
+            <Container className="bg-slate-900 pt-4 pb-0 mb-0">
+              <Section className="flex gap-5 justify-center items-center">
+                <Column className="text-white text-4xl font-extrabold">
+                  ImPerfectors.com
+                </Column>
+                <Column>
+                  <Img
+                    src="https://akshay.imperfectors.com/_next/image?url=%2Favatar.png&w=750&q=75"
+                    width="214"
+                    height="184"
+                    alt="ImPerfectors"
+                    className=""
+                  />
+                </Column>
+              </Section>
+            </Container>
+            <Container className="bg-white p-45 pb-20">
+              <Heading className="text-center my-0 leading-8">
+                Thank You for Reaching Out!
+              </Heading>
+              <Section className="border-2 border-slate-900">
+                <Row>
+                  <Text className="text-base">
+                    Hello {name}, Thank you for connecting with me through my
+                    portfolio website. I genuinely appreciate you taking the
+                    time to reach out. Your message is important to me, and I
+                    will review it carefully and respond as soon as possible. In
+                    the meantime, feel free to explore my work and see how I
+                    bring ideas to life. You can also connect with me on{" "}
+                    <Link href="https://github.com/akshay-1a">GitHub</Link> or{" "}
+                    <Link href="https://www.linkedin.com/in/-akshay-/">
+                      LinkedIn
+                    </Link>{" "}
+                    to stay updated on my latest projects.
+                  </Text>
+                  <Hr />
+                  <Text className="text-base capitalize">
+                    <strong>Here's your submitted details:</strong>
+                  </Text>
+                </Row>
+              </Section>
+              {/* <ul>{steps?.map(({ Description }) => Description)}</ul> */}
+              <ul className="capitalize" type="square">
+                <li className="mb-20">
+                  <strong>Name: </strong> <Link>{name}</Link>
+                </li>
+                <li className="mb-20">
+                  <strong>Email: </strong> <Link>{email}</Link>
+                </li>
+                <li className="mb-20">
+                  <strong>Phone: </strong> <Link>{phone}</Link>
+                </li>
+                <li className="mb-20">
+                  <strong>Message: </strong> <Link>{message}</Link>
+                </li>
+              </ul>
+              <Section className="text-center my-45" style={buttons}>
+                <Button
+                  href="https://imperfectors.com"
+                  className="bg-slate-700 text-white rounded-lg py-3 px-[18px] mr-5 capitalize"
+                >
+                  Visit my Portfolio!
+                </Button>
+                <Button
+                  href="https://imperfectors.com"
+                  className="bg-slate-800 text-white rounded-lg py-3 px-[18px]"
+                >
+                  Visit Imperfectors.com
+                </Button>
+              </Section>
+              <Section className="">
+                <Row>
+                  {links?.map((link) => (
+                    <Column key={link}>
+                      <Link
+                        href={link.link}
+                        className="text-black underline font-bold"
+                      >
+                        {link.title}
+                      </Link>{" "}
+                      <span className="text-green-500 hover:rotate-45">→</span>
+                    </Column>
+                  ))}
+                </Row>
+              </Section>
+            </Container>
+
+            <Container className="pt-20 bg-slate-300">
+              <Section>
                 <Img
-                  src="https://akshay.imperfectors.com/_next/image?url=%2Favatar.png&w=750&q=75"
-                  width="214"
-                  height="184"
-                  alt="ImPerfectors"
+                  src="https://react-email-demo-9fn3mchcm-resend.vercel.app/static/yelp-footer.png"
+                  width="100%"
+                  alt="footer"
                   className=""
                 />
-              </Column>
-            </Section>
-          </Container>
-          <Container className="bg-white p-45">
-            <Heading className="text-center my-0 leading-8">
-              Thank You for Reaching Out!
-            </Heading>
-            <Section className="border-2 border-slate-900">
-              <Row>
-                <Text className="text-base">
-                  Hello {name}, Thank you for connecting with me through my
-                  portfolio website. I genuinely appreciate you taking the time
-                  to reach out. Your message is important to me, and I will
-                  review it carefully and respond as soon as possible. In the
-                  meantime, feel free to explore my work and see how I bring
-                  ideas to life. You can also connect with me on{" "}
-                  <Link href="https://github.com/akshay-1a">GitHub</Link> or{" "}
-                  <Link href="https://www.linkedin.com/in/-akshay-/">
-                    LinkedIn
-                  </Link>{" "}
-                  to stay updated on my latest projects.
-                </Text>
-                <Hr />
-                <Text className="text-base capitalize">
-                  <strong>Here's your submitted details:</strong>
-                </Text>
-              </Row>
-            </Section>
-            {/* <ul>{steps?.map(({ Description }) => Description)}</ul> */}
-            <ul className="capitalize" type="square">
-              <li className="mb-20">
-                <strong>Name: </strong> <Link>{name}</Link>
-              </li>
-              <li className="mb-20">
-                <strong>Email: </strong> <Link>{email}</Link>
-              </li>
-              <li className="mb-20">
-                <strong>Phone: </strong> <Link>{phone}</Link>
-              </li>
-              <li className="mb-20">
-                <strong>Message: </strong> <Link>{message}</Link>
-              </li>
-            </ul>
-            <Section className="text-center my-45">
-              <Button
-                href="https://imperfectors.com"
-                className="bg-brand text-white rounded-lg py-3 px-[18px]"
-              >
-                Visit Imperfectors.com
-              </Button>
-            </Section>
-            <Section className="">
-              <Row>
-                {links?.map((link) => (
-                  <Column key={link}>
-                    <Link
-                      href={link.link}
-                      className="text-black underline font-bold"
-                    >
-                      {link.title}
-                    </Link>{" "}
-                    <span className="text-green-500 hover:rotate-45">→</span>
+                <Link href="https://maps.app.goo.gl/U4uJfG5xMuRBVT7J9">
+                  <Text className="text-center text-slate-900 text-xl">
+                    ImPerfectors, New Delhi, Delhi, India 110077
+                  </Text>
+                </Link>
+                <Row className="mb-45">
+                  <Column className="text-right px-20">
+                    <Link href="tel:+919810368359" className="text-slate-900">
+                      +91 981 036 8359
+                    </Link>
                   </Column>
-                ))}
-              </Row>
-            </Section>
-          </Container>
-
-          <Container className="mt-20">
-            <Section>
-              <Row>
-                <Column className="text-right px-20">
-                  <Link href="tel:+919810368359">+91 981 036 8359</Link>
-                </Column>
-                <Column className="text-left">
-                  <Link href="mailto:imperfectors@gmail.com">
-                    Imperfectors@gmail.com
-                  </Link>
-                </Column>
-              </Row>
-            </Section>
-            <Text className="text-center text-gray-400 mb-45">
-              ImPerfectors, New Delhi, Delhi, India 110077
-            </Text>
+                  <Column className="text-left">
+                    <Link
+                      href="mailto:imperfectors@gmail.com"
+                      className="text-slate-900"
+                    >
+                      Imperfectors@gmail.com
+                    </Link>
+                  </Column>
+                </Row>
+              </Section>
+            </Container>
           </Container>
         </Body>
       </Tailwind>
