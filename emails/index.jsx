@@ -13,6 +13,7 @@ import {
   Section,
   Text,
   Tailwind,
+  Hr,
 } from "@react-email/components";
 import * as React from "react";
 
@@ -98,35 +99,45 @@ export const ContactEmail = ({
           },
         }}
       >
-        <Body className="bg-offwhite text-base font-sans">
-          <Img
-            src="https://akshay.imperfectors.com/_next/image?url=%2Favatar.png&w=750&q=75"
-            width="214"
-            height="184"
-            alt="Netlify"
-            className="mx-auto my-20"
-          />
+        <Body className="bg-offwhite text-base font-sans border-slate-900 border-2">
+          <Container className="bg-slate-900 pt-4 pb-0 mb-0">
+            <Section className="flex gap-5 justify-center items-center">
+              <Column className="text-white text-4xl font-extrabold">
+                ImPerfectors.com
+              </Column>
+              <Column>
+                <Img
+                  src="https://akshay.imperfectors.com/_next/image?url=%2Favatar.png&w=750&q=75"
+                  width="214"
+                  height="184"
+                  alt="ImPerfectors"
+                  className=""
+                />
+              </Column>
+            </Section>
+          </Container>
           <Container className="bg-white p-45">
             <Heading className="text-center my-0 leading-8">
               Thank You for Reaching Out!
             </Heading>
-            <Section>
+            <Section className="border-2 border-slate-900">
               <Row>
                 <Text className="text-base">
-                  Hello {name}, Thank you for getting in touch with me
-                  through my portfolio website. I appreciate you taking the time
-                  to reach out and express your interest. I will review your
-                  message and get back to you as soon as possible. In the
-                  meantime, feel free to explore my work and connect with me on{" "}
+                  Hello {name}, Thank you for connecting with me through my
+                  portfolio website. I genuinely appreciate you taking the time
+                  to reach out. Your message is important to me, and I will
+                  review it carefully and respond as soon as possible. In the
+                  meantime, feel free to explore my work and see how I bring
+                  ideas to life. You can also connect with me on{" "}
                   <Link href="https://github.com/akshay-1a">GitHub</Link> or{" "}
                   <Link href="https://www.linkedin.com/in/-akshay-/">
                     LinkedIn
-                  </Link>
-                  .
+                  </Link>{" "}
+                  to stay updated on my latest projects.
                 </Text>
-
-                <Text className="text-base">
-                  Here's the details you filled up:
+                <Hr />
+                <Text className="text-base capitalize">
+                  <strong>Here's your submitted details:</strong>
                 </Text>
               </Row>
             </Section>

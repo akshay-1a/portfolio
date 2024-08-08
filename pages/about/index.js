@@ -69,11 +69,11 @@ export const aboutData = [
     title: "Experience",
     info: [
       {
-        title: "Freelance Web Developer - Indiexplor Co Ltd",
+        title: "Full Stack Web Developer - Indiexplor Co Ltd",
         stage: "2023 - 2024",
       },
       {
-        title: "Freelance Web Developer - Flyxpert Adventures Co Ltd.",
+        title: "Full Stack Web Developer - Flyxpert Adventures Co Ltd.",
         stage: "2023 - 2024",
       },
     ],
