@@ -78,10 +78,16 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="hidden xl:block w-full h-full max-w-[1080px] max-h-[1080px] absolute -bottom-32 lg:bottom-0 
-          lg:right-[-10%]"
+          className="hidden xl:block w-90 h-90 absolute -bottom-10 right-20"
         >
-          <Model />
+          <img
+            src="/startup.gif"
+            alt="Startup Animation"
+            width="600"
+            height="400"
+            className="relative"
+          />
+          {/* <Model /> */}
         </motion.div>
       </div>
     </div>
