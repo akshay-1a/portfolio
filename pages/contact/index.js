@@ -97,7 +97,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="message"
-              className="textarea"
+              className="textarea normal-case"
             ></textarea>
             <button
               type="submit"

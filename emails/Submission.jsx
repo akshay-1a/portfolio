@@ -56,7 +56,7 @@ export const SubmissionData = ({ name, email, phone, message }) => {
         <Body className="bg-offwhite text-base font-sans">
           <Container style={bord}>
             <Container className="bg-slate-900 pt-4 pb-0 mb-0">
-              <Section className="flex gap-5 justify-center items-center">
+              <Section className="flex gap-5 justify-center items-center pl-45">
                 <Column className="text-white text-4xl font-extrabold">
                   ImPerfectors.com
                 </Column>

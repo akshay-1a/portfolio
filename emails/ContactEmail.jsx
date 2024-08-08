@@ -83,6 +83,10 @@ const bord = {
   borderRadius: "8px",
 };
 
+const cont = {
+  width: "100%",
+}
+
 
 export const ContactEmail = ({
   name,
@@ -115,7 +119,7 @@ export const ContactEmail = ({
         <Body className="bg-offwhite text-base font-sans">
           <Container style={bord}>
             <Container className="bg-slate-900 pt-4 pb-0 mb-0">
-              <Section className="flex gap-5 justify-center items-center">
+              <Section className="flex gap-5 justify-center items-center pl-45">
                 <Column className="text-white text-4xl font-extrabold">
                   ImPerfectors.com
                 </Column>
@@ -214,7 +218,7 @@ export const ContactEmail = ({
                     ImPerfectors, New Delhi, Delhi, India 110077
                   </Text>
                 </Link>
-                <Row className="mb-45">
+                <Row className="mb-45 px-45">
                   <Column className="text-right px-20">
                     <Link href="tel:+919810368359" className="text-slate-900">
                       +91 981 036 8359
