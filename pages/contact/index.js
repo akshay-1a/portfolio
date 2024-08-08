@@ -61,7 +61,7 @@ const Contact = () => {
           {/* form */}
           <motion.form
             onSubmit={onSubmit}
-            variants={fadeIn("up", 0.8)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"

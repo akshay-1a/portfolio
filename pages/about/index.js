@@ -155,7 +155,7 @@ const About = () => {
             Creative <span className="text-accent">Digital Solutions.</span>
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.7)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -168,7 +168,7 @@ const About = () => {
           </motion.p>
           {/* counter */}
           <motion.div
-            variants={fadeIn("right", 0.8)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -181,7 +181,7 @@ const About = () => {
             after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={3} duration={5} delay={2} /> +
+                  <CountUp start={0} end={2} duration={5} delay={0.5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -193,7 +193,7 @@ const About = () => {
             after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} delay={2} /> +
+                  <CountUp start={0} end={10} duration={5} delay={0.5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied Clients
@@ -205,7 +205,7 @@ const About = () => {
             after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={20} duration={5} delay={2} /> +
+                  <CountUp start={0} end={20} duration={5} delay={0.5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
@@ -214,7 +214,7 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={4} duration={5} delay={2} /> +
+                  <CountUp start={0} end={4} duration={5} delay={0.5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning Awards
