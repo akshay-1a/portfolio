@@ -80,7 +80,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="email"
-                className="input"
+                className="input normal-case"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required

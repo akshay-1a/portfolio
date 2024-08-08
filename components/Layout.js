@@ -1,6 +1,7 @@
 import { Sora } from '@next/font/google';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "react-hot-toast";
 
 
 // font settings
@@ -18,14 +19,19 @@ import TopLeftImg from '../components/TopLeftImg'
 
 const Layout = ({children}) => {
   return (
-  <div className={'page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative'}>
-    <TopLeftImg />
-    <Nav />
-    <Header />
-    {children}
-    <Analytics/>
-    <SpeedInsights/>
-  </div>
+    <div
+      className={
+        "page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative"
+      }
+    >
+      <TopLeftImg />
+      <Nav />
+      <Header />
+      {children}
+      <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+      <Analytics />
+      <SpeedInsights />
+    </div>
   );
 };
 
